@@ -20,7 +20,6 @@ const Logo = () => {
                 <text x="85" y="130" style={styles.text}>P</text>
             </svg>
 
-            {/* CSS Animation */}
             <style>
                 {`
                     @keyframes drawPolygon {

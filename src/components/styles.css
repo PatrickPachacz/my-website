@@ -140,7 +140,7 @@
   border-right:#000000;
   border-top:#000000;
   border-bottom:#000000;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .employer-item:hover {
@@ -162,7 +162,17 @@
   background-color: #000000;
   color: white;
   border-radius: 10px;
-  text-align: left;
+  text-align: left; 
+  opacity: 1; 
+  transition: opacity 0.2s ease-in-out;
+}
+
+.job-description.fade-out {
+  opacity: 0;  
+}
+
+.job-description.fade-in {
+  opacity: 1;  
 }
 
 .job-title {
