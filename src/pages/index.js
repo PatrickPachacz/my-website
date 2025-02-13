@@ -1,128 +1,224 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import React, { useState } from "react";
+import Loader from "../components/loader"
+import Nav from "../components/nav"
+import "../components/styles.css"; 
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
-]
+export default function Home() {
+  const [isLoading, setIsLoading] = useState(true)
 
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
+  
+  const styles = {
+    page: {
+      background: "black",
+      height: "100vh",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start", // Align content to the left
+      justifyContent: "center",
+      paddingLeft: "10vw", // Push content closer to the left
+      color: "white",
+      position: "relative", // Prevents absolute positioning issues
+      zIndex: -1,
+    },
+  
+    content: {
+      fontSize: "24px",
+    },
 
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
+      welcomeSection: {
+        position: "absolute", 
+        top: "25vh", 
+        left: "10vw", 
+        maxWidth: "600px", 
+        color: "lightblue",
+      },
+      smallText1: {
+        fontSize: "20px",
+        marginBottom: "5px",
+        color: "lightblue",
+      },
+      largeText: {
+        fontSize: "50px",
+        fontWeight: "bold",
+        margin: "5px 0",
+        color: "yellow",
+      },
+      description: {
+        fontSize: "18px",
+        lineHeight: "1.5",
+        marginTop: "20px",
+      },
+  
+      section: {
+        background: "black",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center", 
+        color: "white",
+        padding: "50px",
+      },
+      
+      sectionHeading: {
+        fontSize: "32px",
+        fontWeight: "bold",
+        textAlign: "center",
+        position: "relative",
+        paddingTop: "50px",
+        width: "100%",
+        maxWidth: "400px",
+        color: "lightblue",
+        borderBottom: "2px solid lightblue", 
+      },
+      sectionLine: {
+        position: "absolute",
+        bottom: "0",
+        left: "50%",
+        height: "2px",
+        backgroundColor: "white",
+      },
+      
+      textSection: {
+        flex: 1,                  
+        paddingRight: "20px",  
+        width: "100%",
+      },
+      photoSection: {
+        flex: 0.4,                
+        display: "flex",
+        justifyContent: "center", 
+        alignItems: "center",
+        transition: "width 0.3s ease",
 
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+      },
+      profileDescription: {
+        fontSize: "18px",
+        lineHeight: "1.5",
+      },
 
-const IndexPage = () => (
-  <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
-    </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
-  </Layout>
-)
+  };
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-export const Head = () => <Seo title="Home" />
+  return (
+    <>
+      {isLoading ? (
+        <Loader onFinish={() => setIsLoading(false)} />
+      ) : (
+        <main>
+          <Nav />
+          <div style={styles.page} id="welcome">
+          <div style={styles.welcomeSection}>
+            <p style={styles.smallText1}>Hello, my name is</p>
+            <h1 style={styles.largeText}>Patrick Pachacz.</h1>
+            <h1 style={styles.largeText}>Welcome to my website.</h1>
+             <p style={styles.description}>
+             I’m a self-taught developer with a passion for building 
+             intuitive and engaging digital experiences. Through dedication and 
+             hands-on learning, I've honed my skills in web development. 
+             Now, I’m eager to break further into the industry, collaborate with like-minded professionals, 
+             and continue growing as a developer.
+             </p>
+          </div>
+          </div>
 
-export default IndexPage
+          <section id="profile" style={styles.section}>
+            <h2 style={styles.sectionHeading}>Profile</h2>
+            <div class="profileContent">
+            <div style={styles.textSection}>
+              <p style={styles.profileDescription}>Greetings! My name is Patrick and I enjoy creating web applications. 
+              <p>It didn't all begin this way. I spent years working in various industries... mostly in Real Estate.
+                Web development had my curiousity and interest, but I had initially assumed it was too late to try. </p>
+              <p>I slowly learned what I could with the time I had, starting with HTML, CSS, and JavaScript.</p>
+              <p>Overtime, I have gained confidence in my abilities.</p>
+              <p>My main focus these days is finding the opportunity to be able to grow as a developer.</p>
+              <p>Here are a few technologies I've been working with recently:</p>
+              <div className="tech-list">
+
+
+               <div className="tech-item">
+               <div class="spinning-container">
+                <div class="spinning-circle"></div>
+                <div class="checkmark">✔️</div>
+               </div>
+                  <span>JavaScript</span>
+                </div>
+                <div className="tech-item">
+                <div class="spinning-container">
+                <div class="spinning-circle"></div>
+                <div class="checkmark">✔️</div>
+               </div>
+                 <span>TypeScript</span>
+               </div>
+                <div className="tech-item">
+                <div class="spinning-container">
+                <div class="spinning-circle"></div>
+                <div class="checkmark">✔️</div>
+               </div>
+                 <span>React</span>
+               </div>
+               <div className="tech-item">
+               <div class="spinning-container">
+                <div class="spinning-circle"></div>
+                <div class="checkmark">✔️</div>
+               </div>
+                 <span>Node.js</span>
+               </div>
+               <div className="tech-item">
+               <div class="spinning-container">
+                <div class="spinning-circle"></div>
+                <div class="checkmark">✔️</div>
+               </div>
+                  <span>Express</span>
+               </div>
+               <div className="tech-item">
+               <div class="spinning-container">
+                <div class="spinning-circle"></div>
+                <div class="checkmark">✔️</div>
+               </div>
+                 <span>WordPress</span>
+               </div>
+               <div className="tech-item">
+               <div class="spinning-container">
+                <div class="spinning-circle"></div>
+                <div class="checkmark">✔️</div>
+               </div>
+                 <span>MongoDB</span>
+               </div>
+                <div className="tech-item">
+                <div class="spinning-container">
+                <div class="spinning-circle"></div>
+                <div class="checkmark">✔️</div>
+               </div>
+                 <span>CSS</span>
+                </div>
+             </div>
+              </p>
+            </div>
+            <div style={styles.photoSection}>
+              <div className="photo-wrapper">
+              <div className="photo-wrapper-overlay"></div> 
+                <img src="https://res.cloudinary.com/dyk0onjht/image/upload/v1739385071/f78quvx7t42dk9j0thve.jpg" alt="Patrick" className="profilePhoto" />
+              </div>
+            </div>
+            </div>
+          </section>
+
+          <div className="expContainer">
+          <section id="experience" style={styles.section}>
+            <h2 style={styles.sectionHeading}>Experience</h2>
+            <div class="experienceContent"></div>
+            <p>This is the experience section.</p>
+          </section>
+          </div>
+
+          <section id="contact" style={styles.section}>
+           <h2 style={styles.sectionHeading}>Contact</h2>
+           <p>This is the contact section.</p>
+          </section>
+
+
+        </main>
+      )}
+    </>
+  );
+}

@@ -1,0 +1,165 @@
+/* Default styles (larger screens) */
+.profileContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    color: lightblue;
+    padding-top: 20px;
+  }
+
+.photo-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transition: all 0.3s ease;
+   
+  }
+
+  .profilePhoto {
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    transition: all 0.3s ease;
+    z-index: 2; 
+    box-shadow: 2px 2px 2px rgba(255, 255, 0, 0.7);
+  }
+
+    
+  .photo-wrapper-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: lightblue;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+    border-radius: 25%;
+  }
+  
+  .photo-wrapper:hover .photo-wrapper-overlay {
+    opacity: 0; 
+  }
+
+  .tech-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
+    gap: 20px; /* Adds spacing between items */
+    justify-content: center; /* Centers content */
+    align-items: center;
+    margin-top: 20px; /* Spacing from previous text */
+  }
+  
+  .tech-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .spinning-container {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .spinning-circle {
+    width: 24px;
+    height: 24px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: spinToCheck 5s ease-out forwards;
+  }
+  
+  .spinning-circle::after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform-origin: left center;
+  }
+  
+  /* Checkmark appears after spin */
+  .checkmark {
+    font-size: 24px;
+    color: yellow;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: appear 0s linear 5s forwards;
+  }
+  
+  /* Spin animation */
+  @keyframes spinToCheck {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  /* Checkmark fade-in */
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  /* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .profileContent {
+      flex-direction: column; 
+      align-items: center; 
+      padding-top: 20px;
+    }
+    .photo-wrapper {
+      width: 100%; 
+      height: auto; 
+      margin-bottom: 20px; 
+    }
+    .profilePhoto {
+      width: 100%; 
+      max-width: 200px;
+      height: auto; 
+    }
+    .photo-wrapper-overlay {
+        height: 88%;
+      }
+      .tech-list {
+        grid-template-columns: repeat(2, 1fr); 
+      }
+  }
+  @media screen and (max-width: 480px) {
+    .tech-list {
+      grid-template-columns: repeat(1, 1fr); /* 1 column for mobile screens */
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .expContainer {
+      flex-direction: column; 
+      align-items: center; 
+      padding-top: 800px;
+      background-color: black;
+    }
+}
+
+
+  
