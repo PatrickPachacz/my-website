@@ -250,7 +250,7 @@ export default function Home() {
           <section id="experience" class="experience-section">
             <h2 style={styles.sectionHeading}>Experience</h2>
             
-            <div class="experience-container">
+          <div class="experience-container">
 
             <div class="employer-list">
             {Object.keys(jobDescriptions).map((employer) => (
@@ -262,12 +262,20 @@ export default function Home() {
                 {employer}
               </button>
             ))} 
-          </div>
+           </div>
 
            <div class="job-description">
             <h1 class="job-title">{highlightCompanyName(jobDescriptions[selectedEmployer]?.title || "Company title")}</h1>
             <p class="job-date">{jobDescriptions[selectedEmployer]?.date || "Date"}</p>
-            <p>{jobDescriptions[selectedEmployer]?.details || "Select a company to view details."}</p>
+            {Array.isArray(jobDescriptions[selectedEmployer]?.details) ? (
+              <ul>
+              {jobDescriptions[selectedEmployer].details.map((detail, index) => (
+               <li key={index}>{detail}</li>
+              ))}
+              </ul>
+              ) : (
+            <p>Select a company to view details.</p>
+            )}
            </div>
           </div>
         
