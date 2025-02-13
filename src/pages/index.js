@@ -6,6 +6,49 @@ import "../components/styles.css";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
+  const [selectedEmployer, setSelectedEmployer] = useState("Angiemellado.art");
+  
+    const jobDescriptions = {
+      "Angiemellado.art": { 
+        title: "Web Developer @ Angiemellado.art", 
+        date: "June 2024 - January 2025", 
+        details: [
+          "Developed high-performance web applications.",
+          "Contributed to company-wide software improvements."
+        ]
+      },
+      "Alan Solutions": { 
+        title: "Frontend Developer @ Alan Solutions", 
+        date: "November 2023 - February 2024", 
+        details: "Built interactive user interfaces and enhanced user experience for e-commerce platforms." 
+      },
+      "One Sotheby's": { 
+        title: "Transaction Coordinator @ One Sotheby's International Realty", 
+        date: "May 2023 - May 2024", 
+        details: "Designed intuitive UI components and improved accessibility across multiple applications." 
+      },
+      "Mortgage Connect": { 
+        title: "Team Lead @ Mortgage Connect", 
+        date: "March 2020 - October 2022", 
+        details: "Developed and optimized APIs, ensuring smooth integration and fast performance." 
+      }
+    };
+    
+  
+    const handleEmployerClick = (employer) => {
+      setSelectedEmployer(employer);
+    };
+
+
+  const highlightCompanyName = (title) => {
+    const [jobTitle, companyName] = title.split(" @ ");
+    return (
+      <>
+        {jobTitle} <span style={{ color: 'yellow' }}>{" @ "}{companyName}</span>
+      </>
+    );
+  };
+
 
   
   const styles = {
@@ -14,11 +57,11 @@ export default function Home() {
       height: "100vh",
       display: "flex",
       flexDirection: "column",
-      alignItems: "flex-start", // Align content to the left
+      alignItems: "flex-start", 
       justifyContent: "center",
-      paddingLeft: "10vw", // Push content closer to the left
+      paddingLeft: "10vw", 
       color: "white",
-      position: "relative", // Prevents absolute positioning issues
+      position: "relative", 
       zIndex: -1,
     },
   
@@ -31,12 +74,12 @@ export default function Home() {
         top: "25vh", 
         left: "10vw", 
         maxWidth: "600px", 
-        color: "lightblue",
+        color: "white",
       },
       smallText1: {
         fontSize: "20px",
         marginBottom: "5px",
-        color: "lightblue",
+        color: "white",
       },
       largeText: {
         fontSize: "50px",
@@ -68,8 +111,8 @@ export default function Home() {
         paddingTop: "50px",
         width: "100%",
         maxWidth: "400px",
-        color: "lightblue",
-        borderBottom: "2px solid lightblue", 
+        color: "white",
+        borderBottom: "2px solid white", 
       },
       sectionLine: {
         position: "absolute",
@@ -204,12 +247,33 @@ export default function Home() {
           </section>
 
           <div className="expContainer">
-          <section id="experience" style={styles.section}>
+          <section id="experience" class="experience-section">
             <h2 style={styles.sectionHeading}>Experience</h2>
-            <div class="experienceContent"></div>
-            <p>This is the experience section.</p>
+            
+            <div class="experience-container">
+
+            <div class="employer-list">
+            {Object.keys(jobDescriptions).map((employer) => (
+              <button
+                key={employer}
+                className={`employer-item ${selectedEmployer === employer ? "selected" : ""}`}
+                onClick={() => handleEmployerClick(employer)}
+              >
+                {employer}
+              </button>
+            ))} 
+          </div>
+
+           <div class="job-description">
+            <h1 class="job-title">{highlightCompanyName(jobDescriptions[selectedEmployer]?.title || "Company title")}</h1>
+            <p class="job-date">{jobDescriptions[selectedEmployer]?.date || "Date"}</p>
+            <p>{jobDescriptions[selectedEmployer]?.details || "Select a company to view details."}</p>
+           </div>
+          </div>
+        
           </section>
           </div>
+
 
           <section id="contact" style={styles.section}>
            <h2 style={styles.sectionHeading}>Contact</h2>

@@ -42,7 +42,7 @@ const styles = {
     },
     polygon: {
         fill: "none",
-        stroke: "lightblue",
+        stroke: "yellow",
         strokeWidth: 5,
         strokeDasharray: "500, 500", 
         strokeDashoffset: "0",

@@ -26,12 +26,12 @@ const Loader = ({ onFinish }) => {
                50% {
               stroke-dasharray: 500, 0;
               stroke-dashoffset: 0;
-              stroke: darkblue; 
+              stroke: white; 
             }
             100% {
               stroke-dasharray: 500, 0;
               stroke-dashoffset: 0;
-              stroke: lightblue; 
+              stroke: yellow; 
             }
           }
           .animated-polygon {
@@ -41,14 +41,12 @@ const Loader = ({ onFinish }) => {
       </style>
 
       <svg width="200" height="220" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
-        {/* Centered Polygon */}
+       
         <polygon
           points="100,10 40,198 190,78 10,78 160,198"
           style={styles.polygon}
           className="animated-polygon"
         />
-        
-        {/* Centered Letter "P" */}
         <text x="100" y="120" fill="white" fontSize="40" fontWeight="bold" textAnchor="middle">
           P
         </text>
@@ -67,7 +65,7 @@ const styles = {
     left: 0,
     width: "100%",
     height: "100vh",
-    background: "black", // Full black background
+    background: "black", 
     zIndex: 9999,
   },
   polygon: {
