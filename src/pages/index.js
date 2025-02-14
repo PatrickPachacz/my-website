@@ -304,12 +304,15 @@ export default function Home() {
           </section>
           </div>
 
+          <div className="projectContainer">
+          <section id="projects" style={styles.section}>
+            <h2 style={styles.sectionHeading}>Recent Projects</h2>
+            <div className="projectContent">
+              <img src="https://res.cloudinary.com/dyk0onjht/image/upload/v1739488547/passport2love_s0an5c.png" alt="passport2love" className="projectPhoto"></img>
 
-          <section id="contact" style={styles.section}>
-           <h2 style={styles.sectionHeading}>Contact</h2>
-           <p>This is the contact section.</p>
+            </div>
           </section>
-
+          </div>
 
         </main>
       )}

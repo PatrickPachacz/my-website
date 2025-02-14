@@ -17,7 +17,7 @@ const Nav = () => {
             <a href="#experience" style={styles.navLink}>Experience</a>
           </li>
           <li style={styles.navItem}>
-            <a href="#contact" style={styles.navLink}>Contact</a>
+            <a href="#projects" style={styles.navLink}>Projects</a>
           </li>
           <li style={styles.navItem}>
             <span style={styles.resumeItem}>Resume</span>
