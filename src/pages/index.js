@@ -36,14 +36,14 @@ export default function Home() {
         details: [
           "Collaborated with title companies, escrow officers, and other stakeholders to expedite residential closing process.",
           "Maintained detailed records of transactions and updated databases regularly.",
-          "Communicated effectively with clients, real estate agents, lenders, and other third parties involved in closing transactions", 
+          "Communicated effectively with clients, real estate agents, lenders, and other third parties involved in closing transactions.", 
         ]
       },
       "Mortgage Connect": { 
         title: "Team Lead @ Mortgage Connect", 
         date: "March 2020 - October 2022", 
         details: [
-          "Responsible for the coordination of all aspects involving the finalization of the loan closing procoess",
+          "Responsible for the coordination of all aspects involving the finalization of the loan closing procoess.",
           "Managed and supervised a crew of up to 10 employees in the closing department, overseeing daily tasks, workflow efficiency, and staff performance.",
           "Calculated and applied appropriate fees regarding home refinancing, investments, and mortgage consolidation.",
           "Prepared Title Bills and Invoicing after reviewing property taxes, judgements, assignments, and other critical documents applicable to final closing." 
