@@ -15,9 +15,9 @@ export default function Home() {
         date: "June 2024 - January 2025", 
         details: [
           "Participated in the launching of a responsive, user-centric webpage utilizing WordPress with customized themes, resulting in an increase of client engagement time within the first month of deployment.",
-          "Managed and optimized core web services, leading to a reduction of site downtime",
+          "Managed and optimized core web services, leading to a reduction of site downtime.",
           "Improved major front-end features of Angiemellado.art website.",
-          "Coordinated with owner to ensure thoughtful and consistent user experiences.",
+          "Reviewed modifications to ensure thoughtful and consistent user experiences.",
         ]
       },
       "Alan Solutions": { 
