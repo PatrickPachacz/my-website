@@ -19,9 +19,9 @@ const Nav = () => {
           <li style={styles.navItem}>
             <a href="#projects" style={styles.navLink}>Projects</a>
           </li>
-          <li style={styles.navItem}>
-            <span style={styles.resumeItem}>Resume</span>
-          </li>
+          <a style={styles.resumeItem} href="/patrickpachacz.resume.pdf" target="_blank" rel="noopener noreferrer">
+            Resume
+          </a>
         </ul>
       </nav>
     );
@@ -70,9 +70,9 @@ const styles = {
   resumeItem: {
     textDecoration: 'none',
     color: 'white',
-    fontSize: '16px',
+    fontSize: '18px',
     fontWeight: 'bold',
-    padding: '5px 10px',
+    padding: '5px 10px 10px',
     border: '2px solid lightblue', 
     borderRadius: '5px', 
   },
