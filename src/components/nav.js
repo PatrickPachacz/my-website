@@ -19,7 +19,7 @@ const Nav = () => {
           <li style={styles.navItem}>
             <a href="#projects" style={styles.navLink}>Projects</a>
           </li>
-          <a style={styles.resumeItem} href="/patrickpachacz.resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a style={styles.resumeItem} href="/patrickpachacz.resume1.pdf" target="_blank" rel="noopener noreferrer">
             Resume
           </a>
         </ul>
