@@ -38,5 +38,5 @@
 </p>
 
 <h1>🌎 Live Demo</h1>
-<a href="https://patrickpachacz.netlify.app" target="_blank" rel="noopener noreferrer">Visit My Website</a>
+<a href="https://patrickpachacz.netlify.app" target="_blank" rel="noopener noreferrer">Visit My Website hosted by netlify</a>
 
