@@ -3,7 +3,7 @@
 <img src="https://github.com/PatrickPachacz/my-website/blob/master/src/images/logo.png?raw=true" width="300"/>
 </div>
 <h1 align="center">
-  Patrick Pachacz site 
+  My Personal Portfolio 🌐 
 </h1>
 <h2 align="center">
   Built using Gatsby and hosted by Netlify
