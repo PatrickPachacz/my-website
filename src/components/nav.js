@@ -1,81 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../components/icons/logo";
+import "../components/nav.css";
 
 const Nav = () => {
-    return (
-      <nav style={styles.navbar}>
-        <div style={styles.logoWrapper}>
-        <a href="#welcome" style={styles.logoLink}>
-          <Logo />
-        </a>
-        </div>
-        <ul style={styles.navList}>
-          <li style={styles.navItem}>
-            <a href="#profile" style={styles.navLink}>Profile</a>
-          </li>
-          <li style={styles.navItem}>
-            <a href="#experience" style={styles.navLink}>Experience</a>
-          </li>
-          <li style={styles.navItem}>
-            <a href="#projects" style={styles.navLink}>Projects</a>
-          </li>
-          <a style={styles.resumeItem} href="/patrickpachacz.resume1.pdf" target="_blank" rel="noopener noreferrer">
-            Resume
-          </a>
-        </ul>
-      </nav>
-    );
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      toggleMenu();
+    }
   };
 
-const styles = {
-  navbar: {
-    position: "fixed",
-    top: 0,
-    left: 0,
-    width: "100%",
-    padding: "20px 20px",
-    background: "rgba(255, 255, 255, 0)",
-    alignItems: "center",
-    display: "flex",
-    justifyContent: "space-between",
-    zIndex: 1000,
-    backdropFilter: 'blur(10px)', 
-    WebkitBackdropFilter: 'blur(10px)', 
-  },
+  return (
+    <nav className="navbar">
+      <div className="logo-wrapper">
+        <a href="#welcome" className="logo-link">
+          <Logo />
+        </a>
+      </div>
 
-  logoWrapper: {
-    display: "flex",
-    alignItems: "center",
-    marginLeft: "20px", 
-    height: "100%", 
-  },
-  navList: {
-    display: "flex",
-    gap: "50px",
-    listStyle: "none",
-    color: "white",
-    fontSize: "18px",
-    fontWeight: "bold",
-    alignItems: "center",
-  },
-  navLink: {
-    textDecoration: 'none',
-    color: 'white',
-    fontSize: '16px',
-    fontWeight: 'bold',
-  },
-  navItem: {
-    cursor: "pointer",
-  },
-  resumeItem: {
-    textDecoration: 'none',
-    color: 'white',
-    fontSize: '18px',
-    fontWeight: 'bold',
-    padding: '5px 10px 10px',
-    border: '2px solid lightblue', 
-    borderRadius: '5px', 
-  },
+      <div 
+        className="hamburger" 
+        onClick={toggleMenu} 
+        onKeyDown={handleKeyDown} 
+        role="button" 
+        tabIndex="0"
+        aria-label="Toggle navigation menu"
+      >
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+
+      <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
+        <li className="nav-item">
+          <a href="#profile" className="nav-link">Profile</a>
+        </li>
+        <li className="nav-item">
+          <a href="#experience" className="nav-link">Experience</a>
+        </li>
+        <li className="nav-item">
+          <a href="#projects" className="nav-link">Projects</a>
+        </li>
+        <a className="resume-item" href="/patrickpachacz.resume1.pdf" target="_blank" rel="noopener noreferrer">
+          Resume
+        </a>
+      </ul>
+    </nav>
+  );
 };
 
 export default Nav;

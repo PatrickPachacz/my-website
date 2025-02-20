@@ -311,7 +311,6 @@ export default function Home() {
              <div className="imageContainer">
               <img src="https://res.cloudinary.com/dyk0onjht/image/upload/v1739488547/passport2love_s0an5c.png" alt="passport2love" className="projectPhoto"></img>
              </div>
-             
               <div className="projectDetails">
               <div className="projectTitle">
                 <p className="featuredText">Featured Project</p>
