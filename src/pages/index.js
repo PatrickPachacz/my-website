@@ -88,28 +88,6 @@ export default function Home() {
       fontSize: "24px",
     },
     
-    githubContainer: {
-      position: "fixed",
-      right: "5%", 
-      bottom: "0%", 
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    },
-    githubLink: {
-      writingMode: "vertical-rl", 
-      textDecoration: "none",
-      fontSize: "16px",
-      color: "yellow",
-      fontWeight: "bold",
-    },
-    line: {
-      width: "2px",
-      height: "100px", 
-      backgroundColor: "yellow",
-      marginTop: "10px",
-    },
-
       welcomeSection: {
         position: "absolute", 
         top: "25vh", 
@@ -205,16 +183,16 @@ export default function Home() {
           </div>
           </div>
 
-          <div style={styles.githubContainer}>
-           <a 
-             href="https://github.com/PatrickPachacz" 
+          <div className="github-container">
+            <a 
+             href="https://github.com/YOUR_GITHUB" 
              target="_blank" 
              rel="noopener noreferrer" 
-             style={styles.githubLink}
-           >
+             className="github-link"
+            >
             github.com/PatrickPachacz 
            </a>
-           <div style={styles.line}></div>
+           <div className="github-line"></div>
           </div>
 
           <section id="profile" style={styles.section}>
