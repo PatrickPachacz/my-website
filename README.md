@@ -19,7 +19,7 @@
   Welcome to my personal portfolio website! This site showcases my work, experience, and projects as a frontend developer. Built with Gatsby, it delivers a fast, responsive, and modern user experience.
 </h2>
 
-<h1>🚀 Features</h1>
+<h1>⚙️ Features</h1>
 <p>
 ✅ Dynamic Experience Section – Click through different companies to see role descriptions with smooth transitions.</br>
 ✅ Responsive Design – Fully optimized for desktop and mobile, adapting seamlessly to different screen sizes - In progress***.</br>
