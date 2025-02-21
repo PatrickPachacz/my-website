@@ -69,10 +69,6 @@ export default function Home() {
       </>
     );
     };
-
-    
-
-
   
   const styles = {
     page: {
@@ -90,6 +86,28 @@ export default function Home() {
   
     content: {
       fontSize: "24px",
+    },
+    
+    githubContainer: {
+      position: "fixed",
+      right: "5%", 
+      bottom: "0%", 
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+    },
+    githubLink: {
+      writingMode: "vertical-rl", 
+      textDecoration: "none",
+      fontSize: "16px",
+      color: "yellow",
+      fontWeight: "bold",
+    },
+    line: {
+      width: "2px",
+      height: "100px", 
+      backgroundColor: "yellow",
+      marginTop: "10px",
     },
 
       welcomeSection: {
@@ -185,6 +203,18 @@ export default function Home() {
              and continue growing as a developer.
              </p>
           </div>
+          </div>
+
+          <div style={styles.githubContainer}>
+           <a 
+             href="https://github.com/PatrickPachacz" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             style={styles.githubLink}
+           >
+            github.com/PatrickPachacz 
+           </a>
+           <div style={styles.line}></div>
           </div>
 
           <section id="profile" style={styles.section}>
