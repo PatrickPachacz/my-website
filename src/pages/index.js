@@ -10,22 +10,10 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
 
   const styles = {
-    page: {
-      background: "black",
-      height: "100vh",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "flex-start", 
-      justifyContent: "center",
-      paddingLeft: "10vw", 
-      color: "white",
-      position: "relative", 
-      zIndex: -1,
-    },
-  
-    content: {
-      fontSize: "24px",
-    },
+
+      content: {
+        fontSize: "24px",
+      },
     
       welcomeSection: {
         position: "absolute", 
@@ -86,8 +74,8 @@ export default function Home() {
         fontSize: "18px",
         lineHeight: "1.5",
       },
-
   };
+
 
   return (
     <>
@@ -96,7 +84,7 @@ export default function Home() {
       ) : (
         <main>
           <Nav />
-          <div style={styles.page} id="welcome">
+          <div className="page" id="welcome">
           <div style={styles.welcomeSection}>
             <p style={styles.smallText1}>Hello, my name is</p>
             <h1 style={styles.largeText}>Patrick Pachacz.</h1>
