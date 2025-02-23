@@ -11,20 +11,6 @@ export default function Home() {
 
   const styles = {
 
-      content: {
-        fontSize: "24px",
-      },
-    
-      section: {
-        background: "black",
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center", 
-        color: "white",
-        padding: "50px",
-      },
-      
       sectionLine: {
         position: "absolute",
         bottom: "0",
@@ -87,7 +73,7 @@ export default function Home() {
            <div className="github-line"></div>
           </div>
 
-          <section id="profile" style={styles.section}>
+          <section id="profile" className="section">
             <h2 className="sectionHeading">Profile</h2>
             <div class="profileContent">
             <div style={styles.textSection}>
@@ -174,7 +160,7 @@ export default function Home() {
           </div>
 
           <div id="projects" className="projectContainer">
-          <section style={styles.section}>
+          <section className="section">
            <h2 className="sectionHeading">Recent Projects</h2>  
             <div className="projectWrapper">
               <div className="imageContainer">
