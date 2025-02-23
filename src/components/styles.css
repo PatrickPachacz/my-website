@@ -96,6 +96,12 @@
   padding: 50px;
 }
 
+.textSection {
+  flex: 1;                 
+  padding-right: 20px;  
+  width: 100%;
+}
+
 
 /* Profile section */
 

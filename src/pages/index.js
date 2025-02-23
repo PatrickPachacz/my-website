@@ -11,19 +11,6 @@ export default function Home() {
 
   const styles = {
 
-      sectionLine: {
-        position: "absolute",
-        bottom: "0",
-        left: "50%",
-        height: "2px",
-        backgroundColor: "white",
-      },
-      
-      textSection: {
-        flex: 1,                  
-        paddingRight: "20px",  
-        width: "100%",
-      },
       photoSection: {
         flex: 0.4,                
         display: "flex",
@@ -76,7 +63,7 @@ export default function Home() {
           <section id="profile" className="section">
             <h2 className="sectionHeading">Profile</h2>
             <div class="profileContent">
-            <div style={styles.textSection}>
+            <div className="textSection">
               <p style={styles.profileDescription}>Greetings! My name is Patrick and I enjoy creating web applications. 
               <p>It didn't all begin this way. I spent years working in various industries... mostly in Real Estate.
                 Web development had my curiousity and interest, but I had initially assumed it was too late to try. </p>
