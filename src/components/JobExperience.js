@@ -4,7 +4,7 @@ import "../components/styles.css";
 const jobDescriptions = {
   "Angiemellado.art": { 
     title: "Web Developer @ Angiemellado.art", 
-    date: "June 2024 - January 2025", 
+    date: "Septeber 2024 - January 2025", 
     details: [
       "Participated in the launching of a responsive, user-centric webpage utilizing WordPress with customized themes, resulting in an increase of client engagement time within the first month of deployment.",
       "Managed and optimized core web services, leading to a reduction of site downtime.",

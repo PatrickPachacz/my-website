@@ -9,22 +9,6 @@ import JobExperience from "../components/jobexperience.js";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
 
-  const styles = {
-
-      photoSection: {
-        flex: 0.4,                
-        display: "flex",
-        justifyContent: "center", 
-        alignItems: "center",
-        transition: "width 0.3s ease",
-
-      },
-      profileDescription: {
-        fontSize: "18px",
-        lineHeight: "1.5",
-      },
-  };
-
 
   return (
     <>
@@ -64,7 +48,7 @@ export default function Home() {
             <h2 className="sectionHeading">Profile</h2>
             <div class="profileContent">
             <div className="textSection">
-              <p style={styles.profileDescription}>Greetings! My name is Patrick and I enjoy creating web applications. 
+              <p className="profileDescription">Greetings! My name is Patrick and I enjoy creating web applications. 
               <p>It didn't all begin this way. I spent years working in various industries... mostly in Real Estate.
                 Web development had my curiousity and interest, but I had initially assumed it was too late to try. </p>
               <p>I slowly learned what I could with the time I had, starting with HTML, CSS, and JavaScript.</p>
@@ -133,7 +117,7 @@ export default function Home() {
              </div>
               </p>
             </div>
-            <div style={styles.photoSection}>
+            <div className="photoSection">
               <div className="photo-wrapper">
               <div className="photo-wrapper-overlay"></div> 
                 <img src="https://res.cloudinary.com/dyk0onjht/image/upload/v1739385071/f78quvx7t42dk9j0thve.jpg" alt="Patrick" className="profilePhoto" />

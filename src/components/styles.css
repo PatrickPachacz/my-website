@@ -114,6 +114,20 @@
     padding-top: 20px;
   }
 
+  .photoSection {
+    flex: 0.4;                
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    transition: width 0.3s ease;
+
+  }
+
+  .profileDescription {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
 .photo-wrapper {
     position: relative;
     width: 200px;
