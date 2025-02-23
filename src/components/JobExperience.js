@@ -43,7 +43,7 @@ const jobDescriptions = {
   }
 };
 
-const JobExperience = () => {
+const Jobexperience = () => {
   const [selectedEmployer, setSelectedEmployer] = useState("Angiemellado.art");
   const [isFading, setIsFading] = useState(false);
 
@@ -103,4 +103,4 @@ const JobExperience = () => {
   );
 };
 
-export default JobExperience;
+export default Jobexperience;

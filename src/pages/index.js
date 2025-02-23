@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Loader from "../components/loader"
 import Nav from "../components/nav"
 import "../components/styles.css"; 
-import JobExperience from "../components/jobexperience.js";
+import Jobexperience from "../components/jobexperience.js";
 
 
 
@@ -132,7 +132,7 @@ export default function Home() {
           </section>
 
           <div>
-           <JobExperience />
+           <Jobexperience />
           </div>
 
           <div id="projects" className="projectContainer">
