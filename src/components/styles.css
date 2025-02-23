@@ -16,14 +16,7 @@
   color: yellow;
   font-weight: bold;
   transition: 0.3s ease-in-out;
-}
-
-.github-line {
-  width: 2px;
-  height: 100px;
-  background-color: yellow;
-  margin-top: 15px;
-  margin-left: -4px;
+  padding-bottom: 10px;
 }
 
 .github-link:hover {

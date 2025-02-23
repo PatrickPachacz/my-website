@@ -41,7 +41,12 @@ export default function Home() {
             >
             github.com/PatrickPachacz 
            </a>
-           <div className="github-line"></div>
+           <svg width="30px" height="120px" viewBox="5 0 25 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 0 Q 40 40, 10 100 T 10 210" stroke="yellow" stroke-width="4" fill="transparent"/>
+            <path d="M20 0 Q -10 40, 20 100 T 20 210" stroke="yellow" stroke-width="4" fill="transparent"/>
+           </svg>
+
+
           </div>
 
           <section id="profile" className="section">
