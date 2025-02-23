@@ -15,30 +15,6 @@ export default function Home() {
         fontSize: "24px",
       },
     
-      welcomeSection: {
-        position: "absolute", 
-        top: "25vh", 
-        left: "10vw", 
-        maxWidth: "600px", 
-        color: "white",
-      },
-      smallText1: {
-        fontSize: "20px",
-        marginBottom: "5px",
-        color: "white",
-      },
-      largeText: {
-        fontSize: "50px",
-        fontWeight: "bold",
-        margin: "5px 0",
-        color: "yellow",
-      },
-      description: {
-        fontSize: "18px",
-        lineHeight: "1.5",
-        marginTop: "20px",
-      },
-  
       section: {
         background: "black",
         height: "100vh",
@@ -85,11 +61,11 @@ export default function Home() {
         <main>
           <Nav />
           <div className="page" id="welcome">
-          <div style={styles.welcomeSection}>
-            <p style={styles.smallText1}>Hello, my name is</p>
-            <h1 style={styles.largeText}>Patrick Pachacz.</h1>
-            <h1 style={styles.largeText}>Welcome to my website.</h1>
-             <p style={styles.description}>
+          <div className="welcomeSection">
+            <p className="smallText1">Hello, my name is</p>
+            <h1 className="largeText">Patrick Pachacz.</h1>
+            <h1 className="largeText">Welcome to my website.</h1>
+             <p className="description">
              I’m a self-taught developer with a passion for building 
              intuitive and engaging digital experiences. Through dedication and 
              hands-on learning, I've honed my skills in web development. 
