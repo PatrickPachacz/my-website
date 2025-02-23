@@ -55,8 +55,8 @@
   padding-Top: 50px;
   width: 100%;
   max-Width: 400px;
-  color: white;
-  border-Bottom: 2px solid white;
+  color: yellow;
+  border-Bottom: 2px solid yellow;
 }
 
 .welcomeSection {
@@ -105,7 +105,7 @@
 
 /* Profile section */
 
-.profileContent {
+  .profileContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -128,7 +128,7 @@
     line-height: 1.5;
   }
 
-.photo-wrapper {
+  .photo-wrapper {
     position: relative;
     width: 200px;
     height: 200px;
@@ -240,15 +240,15 @@
   }
 
   
-.employer-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 200px;
-  max-height: 300px; 
-  overflow-y: auto; 
-  padding-right: 10px;
-}
+  .employer-list {
+   display: flex;
+    flex-direction: column;
+   gap: 10px;
+    width: 200px;
+    max-height: 300px; 
+   overflow-y: auto; 
+   padding-right: 10px;
+  }
 
 
 .employer-item {
