@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Loader from "../components/loader"
 import Nav from "../components/nav"
 import "../components/styles.css"; 
-import Jobexperience from "../components/jobexperience.js";
+import Jobexperience from "../components/jobexperience";
 
 
 
