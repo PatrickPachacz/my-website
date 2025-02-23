@@ -113,7 +113,7 @@ export default function Home() {
 
           <div className="github-container">
             <a 
-             href="https://github.com/YOUR_GITHUB" 
+             href="https://github.com/PatrickPachacz" 
              target="_blank" 
              rel="noopener noreferrer" 
              className="github-link"
