@@ -57,6 +57,12 @@
     border: 2px solid lightblue;
     border-radius: 5px;
   }
+
+  .resume-item:hover {
+    color: #ffffff; 
+    transform: scale(1); 
+    text-shadow: 0 0 10px rgb(255, 255, 255); 
+  }
   
   .hamburger {
     display: none;
