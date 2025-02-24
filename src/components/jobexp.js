@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../components/styles.css"; 
 
 
-const Jobexperience = () => {
+const Jobexp = () => {
   const [selectedEmployer, setSelectedEmployer] = useState("Angiemellado.art");
   const [isFading, setIsFading] = useState(false);
 
@@ -104,4 +104,4 @@ const Jobexperience = () => {
   );
 };
 
-export default Jobexperience;
+export default Jobexp;
