@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Loader from "../components/loader"
 import Nav from "../components/nav"
-import "../components/styles.css"; 
 import Jobexperience from "../components/jobexperience"
+import "../components/styles.css"; 
+
 
 
 
@@ -131,9 +132,9 @@ export default function Home() {
             </div>
           </section>
 
-          <div>
+ 
            <Jobexperience />
-          </div>
+
 
           <div id="projects" className="projectContainer">
           <section className="section">
