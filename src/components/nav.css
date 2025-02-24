@@ -39,6 +39,13 @@
   
   .nav-item {
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-item:hover {
+    color: #ffffff; 
+    transform: scale(1); 
+    text-shadow: 0 0 10px rgb(255, 255, 255); 
   }
   
   .resume-item {
