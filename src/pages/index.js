@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Loader from "../components/loader"
 import Nav from "../components/nav"
-import Jobexperience from "../components/jobexperience"
 import "../components/styles.css"; 
+import Jobexperience from './../components/jobexperience';
 
 
 
