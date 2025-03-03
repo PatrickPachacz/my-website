@@ -44,7 +44,7 @@ const Nav = () => {
         <li className="nav-item">
           <a href="#projects" className="nav-link">Projects</a>
         </li>
-        <a className="resume-item" href="/patrickpachacz.resume1.pdf" target="_blank" rel="noopener noreferrer">
+        <a className="resume-item" href="/patrickpachacz.resume.pdf" target="_blank" rel="noopener noreferrer">
           Resume
         </a>
       </ul>

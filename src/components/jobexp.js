@@ -9,7 +9,7 @@ const Jobexp = () => {
   const jobDescriptions = {
     "Angiemellado.art": { 
       title: "Web Developer @ Angiemellado.art", 
-      date: "September 2024 - January 2025", 
+      date: "November 2024 - January 2025", 
       details: [
         "Participated in the launching of a responsive, user-centric webpage utilizing WordPress with customized themes, resulting in an increase of client engagement time within the first month of deployment.",
         "Managed and optimized core web services, leading to a reduction of site downtime.",

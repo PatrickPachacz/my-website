@@ -56,12 +56,12 @@ export default function Home() {
             <div class="profileContent">
             <div className="textSection">
               <p className="profileDescription">Greetings! My name is Patrick and I enjoy creating web applications. 
-              <p>It didn't all begin this way. I spent years working in various industries... mostly in Real Estate.
-                Web development had my curiousity and interest, but I had initially assumed it was too late to try. </p>
-              <p>I slowly learned what I could with the time I had, starting with HTML, CSS, and JavaScript.</p>
+              <p>It didn't begin this way. I spent years working in various industries... mostly in Real Estate.
+                Web development had my curiosity and interest. However, I had initially assumed it was too late to try. </p>
+              <p>I slowly learned what I could with the time I had. Starting with HTML, CSS, and JavaScript.</p>
               <p>Overtime, I have gained confidence in my abilities.</p>
               <p>My main focus these days is finding the opportunity to be able to grow as a developer.</p>
-              <p>Here are a few technologies I've been working with recently:</p>
+              <p>Here are a few technologies that I have been working with recently:</p>
               <div className="tech-list">
 
 
