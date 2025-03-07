@@ -1,11 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../components/icons/logo";
 import "../components/nav.css";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => setMenuOpen(!menuOpen);
+  const [scrollY, setScrollY] = useState(0);
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+        const currentScrollY = window.scrollY;
+        setHidden(currentScrollY > scrollY && currentScrollY > 50);
+        setScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+}, [scrollY]);
+
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter" || event.key === " ") {
@@ -14,12 +27,11 @@ const Nav = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="logo-wrapper">
+    <nav className={`navbar ${hidden ? "hidden" : ""}`}>
         <a href="#welcome" className="logo-link">
           <Logo />
         </a>
-      </div>
+
 
       <div 
         className="hamburger" 
