@@ -47,7 +47,7 @@ const Loader = ({ onFinish }) => {
           style={styles.polygon}
           className="animated-polygon"
         />
-        <text x="100" y="120" fill="white" fontSize="40" fontWeight="bold" textAnchor="middle">
+        <text x="100" y="120" fill="white" fontSize="40" fontWeight="bold" textAnchor="middle" fontFamily="'Dancing Script', 'Pacifico', 'Brush Script MT', cursive">
           P
         </text>
       </svg>
