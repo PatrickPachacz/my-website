@@ -163,29 +163,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="projectWrapper">
-              <div className="imageContainer">
-                <img src="https://res.cloudinary.com/dyk0onjht/image/upload/v1739488547/passport2love_s0an5c.png" alt="passport2love" className="projectPhoto"></img>
-              </div>
-              <div className="projectDetails">
-                <div className="projectTitle">
-                 <p className="featuredText">Featured Project</p>
-                 <h3 className="projectName">Passport2Love</h3>
-                </div>
-
-                <div className="projectDescription">
-                 <p>
-                   Passport2Love is a dynamic and engaging platform designed to connect individuals across the globe. 
-                    Built with a focus on user experience, it facilitates seamless interactions through an intuitive interface.
-                 </p>
-                </div>
-           
-                <div className="projectTech">
-                  <p><strong>Tech Stack:</strong> MERN (MongoDB, Express, React, Node.js)</p>
-                </div>
-              </div>
-            </div>
-
+       
             
           </section>
           </div>
