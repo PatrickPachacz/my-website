@@ -3,23 +3,18 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 12%;
     padding: 20px 20px;
     background: rgba(255, 255, 255, 0);
     align-items: center;
     display: flex;
     justify-content: space-between;
     z-index: 1000;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
   
-  .logo-wrapper {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    height: 100%;
-  }
-  
+
   .nav-list {
     display: flex;
     gap: 50px;
