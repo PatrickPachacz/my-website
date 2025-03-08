@@ -10,7 +10,7 @@
 </h2>
 
 <div align="center">
-<img src="https://github.com/PatrickPachacz/my-website/blob/master/src/images/pagewebsite.png?raw=true" width="600"/>
+<img src="https://github.com/PatrickPachacz/my-website/blob/master/src/images/projectscreen.png?raw=true" width="600"/>
 </div>
 
 
