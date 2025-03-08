@@ -13,14 +13,14 @@
   writing-mode: vertical-rl;
   text-decoration: none;
   font-size: 16px;
-  color: yellow;
+  color: white;
   font-weight: bold;
   transition: 0.3s ease-in-out;
   padding-bottom: 10px;
 }
 
 .github-link:hover {
-  color: #ffffff; 
+  color: red; 
   transform: scale(1); 
   text-shadow: 0 0 10px rgb(255, 255, 255); 
 }

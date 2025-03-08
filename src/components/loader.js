@@ -18,36 +18,62 @@ const Loader = ({ onFinish }) => {
     <div style={styles.loaderContainer}>
       <style>
         {`
-          @keyframes drawPolygon {
+          @keyframes rotateArcInner {
             0% {
-              stroke-dasharray: 0, 500;
-              stroke-dashoffset: 500;
+              transform: rotate(0deg);
             }
-               50% {
-              stroke-dasharray: 500, 0;
-              stroke-dashoffset: 0;
-              stroke: white; 
+            50% {
+              transform: rotate(180deg);
             }
             100% {
-              stroke-dasharray: 500, 0;
-              stroke-dashoffset: 0;
-              stroke: yellow; 
+              transform: rotate(360deg);
             }
           }
-          .animated-polygon {
-            animation: drawPolygon 5s forwards;
+
+          @keyframes rotateArcOuter {
+            0% {
+              transform: rotate(0deg);
+            }
+            50% {
+              transform: rotate(-180deg);
+            }
+            100% {
+              transform: rotate(-360deg);
+            }
+          }
+
+          .rotating-arc-inner {
+            transform-origin: 100px 130px;
+            animation: rotateArcInner 2s cubic-bezier(0.5, 0, 0.5, 1) infinite; /* Ease-in-out effect */
+          }
+
+          .rotating-arc-outer {
+            transform-origin: 100px 130px;
+            animation: rotateArcOuter 2s cubic-bezier(0.5, 0, 0.5, 1) infinite; /* Opposite direction */
           }
         `}
       </style>
 
       <svg width="200" height="220" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
-       
-        <polygon
-          points="100,10 40,198 190,78 10,78 160,198"
-          style={styles.polygon}
-          className="animated-polygon"
-        />
-        <text x="100" y="120" fill="white" fontSize="40" fontWeight="bold" textAnchor="middle" fontFamily="'Dancing Script', 'Pacifico', 'Brush Script MT', cursive">
+        <g className="rotating-arc-inner">
+          <path
+            d="M 100,130 
+               m -60, 0 
+               a 60,60 0 0,1 120,0"
+            style={styles.circleInner}
+          />
+        </g>
+
+        <g className="rotating-arc-outer">
+          <path
+            d="M 100,130 
+               m -80, 0 
+               a 80,80 0 0,1 160,0"
+            style={styles.circleOuter}
+          />
+        </g>
+
+        <text x="100" y="140" fill="white" fontSize="50" fontWeight="bold" textAnchor="middle" fontFamily="'Dancing Script', 'Pacifico', 'Brush Script MT', cursive">
           P
         </text>
       </svg>
@@ -68,12 +94,15 @@ const styles = {
     background: "black", 
     zIndex: 9999,
   },
-  polygon: {
+  circleInner: {
     fill: "none",
     stroke: "white",
-    strokeWidth: 3,
-    strokeDasharray: "500",
-    strokeDashoffset: "500",
+    strokeWidth: 4,
+  },
+  circleOuter: {
+    fill: "none",
+    stroke: "red",
+    strokeWidth: 4,
   },
 };
 

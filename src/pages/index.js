@@ -21,7 +21,7 @@ export default function Home() {
           <Nav />
           <div className="page" id="welcome">
           <div className="welcomeSection">
-            <p className="smallText1">Hello, my name is</p>
+            <p className="smallText1">Hello, I am</p>
             <h1 className="largeText">Patrick Pachacz.</h1>
             <h1 className="largeText">Welcome to my website.</h1>
              <p className="description">
@@ -44,8 +44,8 @@ export default function Home() {
             github.com/PatrickPachacz 
            </a>
            <svg width="30px" height="120px" viewBox="5 0 25 200" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 0 Q 40 40, 10 100 T 10 210" stroke="yellow" stroke-width="4" fill="transparent"/>
-            <path d="M20 0 Q -10 40, 20 100 T 20 210" stroke="yellow" stroke-width="4" fill="transparent"/>
+            <path d="M5 0 Q 40 40, 10 100 T 10 210" stroke="red" stroke-width="4" fill="transparent"/>
+            <path d="M20 0 Q -10 40, 20 100 T 20 210" stroke="white" stroke-width="4" fill="transparent"/>
            </svg>
 
 
