@@ -23,7 +23,7 @@ export default function Home() {
           <div className="welcomeSection">
             <p className="smallText1">Hello, I am</p>
             <h1 className="largeText">Patrick Pachacz.</h1>
-            <h1 className="largeText">Welcome to my website.</h1>
+            <h1 className="largeTextWelcome">Welcome to my website.</h1>
              <p className="description">
              I’m a self-taught developer with a passion for building 
              intuitive and engaging digital experiences. Through dedication and 
@@ -68,56 +68,56 @@ export default function Home() {
                <div className="tech-item">
                <div class="spinning-container">
                 <div class="spinning-circle"></div>
-                <div class="checkmark">✔️</div>
+                <div class="checkmark">&#10004;</div>
                </div>
                   <span>JavaScript</span>
                 </div>
                 <div className="tech-item">
                 <div class="spinning-container">
                 <div class="spinning-circle"></div>
-                <div class="checkmark">✔️</div>
+                <div class="checkmark">&#10004;</div>
                </div>
                  <span>TypeScript</span>
                </div>
                 <div className="tech-item">
                 <div class="spinning-container">
                 <div class="spinning-circle"></div>
-                <div class="checkmark">✔️</div>
+                <div class="checkmark">&#10004;</div>
                </div>
                  <span>React</span>
                </div>
                <div className="tech-item">
                <div class="spinning-container">
                 <div class="spinning-circle"></div>
-                <div class="checkmark">✔️</div>
+                <div class="checkmark">&#10004;</div>
                </div>
                  <span>Node.js</span>
                </div>
                <div className="tech-item">
                <div class="spinning-container">
                 <div class="spinning-circle"></div>
-                <div class="checkmark">✔️</div>
+                <div class="checkmark">&#10004;</div>
                </div>
                   <span>Express</span>
                </div>
                <div className="tech-item">
                <div class="spinning-container">
                 <div class="spinning-circle"></div>
-                <div class="checkmark">✔️</div>
+                <div class="checkmark">&#10004;</div>
                </div>
                  <span>WordPress</span>
                </div>
                <div className="tech-item">
                <div class="spinning-container">
                 <div class="spinning-circle"></div>
-                <div class="checkmark">✔️</div>
+                <div class="checkmark">&#10004;</div>
                </div>
                  <span>MongoDB</span>
                </div>
                 <div className="tech-item">
                 <div class="spinning-container">
                 <div class="spinning-circle"></div>
-                <div class="checkmark">✔️</div>
+                <div class="checkmark">&#10004;</div>
                </div>
                  <span>CSS</span>
                 </div>

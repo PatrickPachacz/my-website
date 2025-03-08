@@ -83,7 +83,7 @@ const styles = {
         fill: "White",
         fontSize: "80px",
         fontWeight: "bold",
-        fontFamily: "'Dancing Script', 'Pacifico', 'Brush Script MT', cursive",
+        fontFamily: "'Brush Script MT', cursive",
     },
 };
 

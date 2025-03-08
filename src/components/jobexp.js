@@ -62,7 +62,7 @@ const Jobexp = () => {
     const [jobTitle, companyName] = title.split(" @ ");
     return (
       <>
-        {jobTitle} <span style={{ color: 'yellow' }}>{" @ "}{companyName}</span>
+        {jobTitle} <span style={{ color: 'red' }}>{" @ "}{companyName}</span>
       </>
     );
   };

@@ -48,8 +48,13 @@
   padding-Top: 50px;
   width: 100%;
   max-Width: 400px;
-  color: yellow;
-  border-Bottom: 2px solid yellow;
+  color: white; 
+  text-shadow: 
+    0px 2px 2px rgb(240, 200, 200), 
+    0px 4px 4px rgb(220, 150, 150),  
+    0px 6px 6px rgb(200, 100, 100), 
+    0px 8px 8px rgb(180, 50, 50),    
+    0px 10px 10px rgb(160, 0, 0);    
 }
 
 .welcomeSection {
@@ -70,7 +75,21 @@
   font-size: 50px;
   font-weight: bold;
   margin: 5px 0;
-  color: yellow;
+  font-family: "Brush Script MT", cursive; 
+  color: white; 
+}
+
+.largeTextWelcome {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: white; 
+  text-shadow: 
+    0px 2px 2px rgb(240, 200, 200), 
+    0px 4px 4px rgb(220, 150, 150),  
+    0px 6px 6px rgb(200, 100, 100), 
+    0px 8px 8px rgb(180, 50, 50),    
+    0px 10px 10px rgb(160, 0, 0);    
 }
 
 .description {
@@ -135,7 +154,7 @@
     border-radius: 25%;
     transition: all 0.3s ease;
     z-index: 2; 
-    box-shadow: 2px 2px 2px rgba(255, 255, 0, 0.7);
+    box-shadow: 2px 2px 2px red;
   }
 
   .photo-wrapper-overlay {
@@ -179,7 +198,7 @@
   .spinning-circle {
     width: 24px;
     height: 24px;
-    border: 2px solid yellow;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 50%;
     position: absolute;
     top: 0;
@@ -191,7 +210,7 @@
     content: "";
     width: 10px;
     height: 2px;
-    background: yellow;
+    background: white;
     position: absolute;
     top: 50%;
     right: -10px;
@@ -201,7 +220,8 @@
 
   .checkmark {
     font-size: 24px;
-    color: yellow;
+    color: red;
+    font-family: Arial, sans-serif; 
     position: absolute;
     top: 40%;
     left: 50%;
@@ -235,10 +255,10 @@
   
   .employer-list {
    display: flex;
-    flex-direction: column;
+   flex-direction: column;
    gap: 10px;
-    width: 200px;
-    max-height: 300px; 
+   width: 200px;
+   max-height: 300px; 
    overflow-y: auto; 
    padding-right: 10px;
   }
@@ -258,12 +278,12 @@
 }
 
 .employer-item:hover {
-  background-color: #95a318;
+  background-color: rgb(180, 50, 50)
 }
 
 
 .employer-item.selected {
-  border-left: 4px solid yellow;
+  border-left: 4px solid rgb(160, 0, 0);
   font-weight: bold;
 }
 
@@ -341,7 +361,8 @@
 
 .featuredText {
   font-size: 14px;
-  color: #95a318;
+  font-family: "Brush Script MT", cursive; 
+  color: white; 
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -349,7 +370,7 @@
 .projectName {
   font-size: 24px;
   font-weight: bold;
-  color: yellow;
+  color: rgb(160, 0, 0);
 }
 
 .projectDescription {
