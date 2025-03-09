@@ -127,7 +127,7 @@ export default function Home() {
             <div className="photoSection">
               <div className="photo-wrapper">
               <div className="photo-wrapper-overlay"></div> 
-                <img src="https://res.cloudinary.com/dyk0onjht/image/upload/v1739385071/f78quvx7t42dk9j0thve.jpg" alt="Patrick" className="profilePhoto" />
+                <img src="https://res.cloudinary.com/dyk0onjht/image/upload/v1741482545/headshot_cbym8l.jpg" alt="Headshot" className="profilePhoto" />
               </div>
             </div>
             </div>
