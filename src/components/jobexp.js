@@ -19,7 +19,7 @@ const Jobexp = () => {
     },
     "Alan Solutions": { 
       title: "Frontend Developer @ Alan Solutions", 
-      date: "December 2023 - February 2024", 
+      date: "November 2023 - Januaury 2024", 
       details: [
         "Collaborated with designers, project managers, and other engineers to transform creative concepts into production realities for clients.", 
         "Conducted debugging and testing to ensure data accuracy and functionality.",
@@ -29,7 +29,7 @@ const Jobexp = () => {
     },
     "One Sotheby's": { 
       title: "Transaction Coordinator @ One Sotheby's International Realty", 
-      date: "May 2023 - May 2024", 
+      date: "July 2023 - May 2024", 
       details: [
         "Collaborated with title companies, escrow officers, and other stakeholders to expedite residential closing process.",
         "Maintained detailed records of transactions and updated databases regularly.",

@@ -21,15 +21,13 @@ export default function Home() {
           <Nav />
           <div className="page" id="welcome">
           <div className="welcomeSection">
-            <p className="smallText1">Hello, I am</p>
+            <p className="smallText1">Hello, my name is</p>
             <h1 className="largeText">Patrick Pachacz.</h1>
             <h1 className="largeTextWelcome">Welcome to my website.</h1>
              <p className="description">
              I’m a self-taught developer with a passion for building 
              intuitive and engaging digital experiences. Through dedication and 
-             hands-on learning, I've honed my skills in web development. 
-             Now, I’m eager to break further into the industry, collaborate with like-minded professionals, 
-             and continue growing as a developer.
+             hands-on learning, I've slowly improved my skills in web development. 
              </p>
           </div>
           </div>
@@ -55,12 +53,12 @@ export default function Home() {
             <h2 className="sectionHeading">Profile</h2>
             <div class="profileContent">
             <div className="textSection">
-              <p className="profileDescription">Greetings! My name is Patrick and I enjoy creating web applications. 
-              <p>It didn't begin this way. I spent years working in various industries... mostly in Real Estate.
-                Web development had my curiosity and interest. However, I had initially assumed it was too late to try. </p>
+              <p className="profileDescription">I enjoy creating web applications. 
+              <p>I have spent years working in various industries, mostly in Real Estate and Administration.
+                As a hobby I enjoy creating new web applications and solving any problems related to them.</p>
               <p>I slowly learned what I could with the time I had. Starting with HTML, CSS, and JavaScript.</p>
-              <p>Overtime, I have gained confidence in my abilities.</p>
-              <p>My main focus these days is finding the opportunity to be able to grow as a developer.</p>
+              <p>Overtime, I gained confidence in my abilities.</p>
+              <p>I look forward to looking to learning more.</p>
               <p>Here are a few technologies that I have been working with recently:</p>
               <div className="tech-list">
 
