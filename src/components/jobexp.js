@@ -19,7 +19,7 @@ const Jobexp = () => {
     },
     "Alan Solutions": { 
       title: "Frontend Developer @ Alan Solutions", 
-      date: "November 2023 - Januaury 2024", 
+      date: "November 2023 - January 2024", 
       details: [
         "Collaborated with designers, project managers, and other engineers to transform creative concepts into production realities for clients.", 
         "Conducted debugging and testing to ensure data accuracy and functionality.",
